@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/21207205c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+
+            <a class="navbar-brand d-flex justify-content-center align-items-center">
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <span>Instagram</span>
+            </a>
+
+            <form class="d-flex justify-content-center align-items-center" role="search">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary bg-success bs-btn;"
+                    style=" height: 35px; --bs-btn-border-color: #198754;" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <p>Create a new post</p>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="modal-body">
+                                <h6>caption</h6>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Add the caption post here</label>
+                                </div>
+                                <i class="fa-solid fa-camera"></i>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="modal-footer">
+
+
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin: 6px;" class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" bt-sm
+                        aria-expanded="false" ">
+                        <i class=" fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start"">
+                        <li><a class=" dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="navindividual">
+        <ul class="nav justify-content-center d-flex-column" class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                        class="fa-solid fa-table-cells"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                        class="fa-regular fa-square"></i></button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="row" class="imagenes" style="margin: 20px;">
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <img class="d-block mb-4 h-100 w-100" style="padding-bottom: 5px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuljB3AmPGRX0zXHGrk9nb3ORu57-ICDX8qg&s"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <img class="d-block mb-4 h-100 w-100" style="padding-bottom: 5px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCiXfMmmURCd80gk1AUYQ814yY9xb-a8-43g&s"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <img class="d-block mb-4 h-100 w-100" style="padding-bottom: 5px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7cdzDVDPlrUMjg8ismyR3D8bESASYd5XGw&s"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <img class="d-block mb-4 h-100 w-100" style="padding-bottom: 5px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHJiaRPGxM_6PXKtaAhvGsta0mRJhAkeI8nw&s"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <img class="d-block mb-4 h-100 w-100" style="padding-bottom: 5px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzZQBaDoy-959VQDaXQfbGYptCTb-9jaJr-Q&s"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <img class="d-block mb-4 h-100 w-100" style="padding-bottom: 5px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1kpKw5jdjyzlU-Ou9ktWpIUwBklaPq_84w&s"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <img class="d-block mb-4 h-100 w-100" style="padding-bottom: 5px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlh5RS62Flj5yTdQddTJVEstajSPCzdMMAewyS6BHF4bNSzzlNPbo-HD87jwLMnp0nGSg&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-ms-6 col-sm-7">
+                        <img class="d-block mb-4 h-100 w-100" style="padding-bottom: 5px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW9j8sXw7z_W_fexvUV9Ah4aW6G5OiMCH5Ehn0AY2gxtB75RKX0kBDhqupfvxizkaIwWo&usqp=CAU"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-7">
+                        <img class="d-block mb-4 h-100 w-100" style="padding-bottom: 5px;"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlh5RS62Flj5yTdQddTJVEstajSPCzdMMAewyS6BHF4bNSzzlNPbo-HD87jwLMnp0nGSg&usqp=CAU"
+                            alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="d-flex-column justify-content-center align-items-center">
+                    <div class="card" style="width: 18rem; margin: auto; margin-bottom: 10px;">
+                        <div class="d-flex justify-content-between">
+                            <h3>one piece</h3>
+                            <p>3/9</p>
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuljB3AmPGRX0zXHGrk9nb3ORu57-ICDX8qg&s"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card’s content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; margin: auto; margin-bottom: 10px;">
+                        <div class="d-flex justify-content-between">
+                            <h3>Dead Note</h3>
+                            <p>3/9</p>
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuljB3AmPGRX0zXHGrk9nb3ORu57-ICDX8qg&s"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card’s content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem; margin: auto; margin-bottom: 10px;">
+                        <div class="d-flex justify-content-between">
+                            <h3>one piece</h3>
+                            <p>3/9</p>
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuljB3AmPGRX0zXHGrk9nb3ORu57-ICDX8qg&s"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">398 likes</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of the card’s content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
